@@ -1,0 +1,19 @@
+
+body{
+    max-width: 1440px;
+    width: 100vw;
+    max-height: 900px;
+    height: 100vh;
+    // flex-shrink: 0;
+    background-color: #0B0D17;
+
+    .container{
+    transform:translateX(5.4rem);
+    // flex-shrink: 0;
+    background-image: url('../assets/home/background-home-desktop.jpg');
+    width: 100vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+}

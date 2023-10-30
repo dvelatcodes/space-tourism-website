@@ -13,10 +13,10 @@
  --h5-letter-spacing: 4.725px;
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
   }
-}
+} */
 
 *{
   padding: 0;
