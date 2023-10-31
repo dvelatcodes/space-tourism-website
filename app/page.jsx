@@ -1,15 +1,12 @@
-import './index.scss'
+'use client';
+import './index.scss';
+import Navbar from './component/navbar/Navbar';
+
 export default function Home() {
   return (
-   <div className="container">
-    <header>
-      <nav>
-        
-      </nav>
-    </header>
-    <main>
-
-    </main>
-   </div>
-  )
+    <div className='homeContainer'>
+      <Navbar />
+      <main></main>
+    </div>
+  );
 }

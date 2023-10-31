@@ -1,5 +1,7 @@
 import { Bellefair } from 'next/font/google'
-import './globals.css'
+import './globals.scss'
+
+// components
 
 const bellefair = Bellefair({ subsets: ['latin'], weight: ["400"] })
 
@@ -11,7 +13,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={bellefair.className}>{children}</body>
+      <body className={bellefair.className}>
+        {children}
+      </body>
     </html>
   )
 }

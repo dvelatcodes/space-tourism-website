@@ -1,0 +1,66 @@
+header {
+  width: 100vw;
+  height: 96px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  nav {
+    width: 830px;
+    height: 96px;
+
+    div {
+      width: inherit;
+      height: inherit;
+      position: absolute;
+      right: 0;
+      display: flex;
+      align-items: center;
+      background: rgba(255, 255, 255, 0.04);
+      backdrop-filter: blur(40.774227142333984px);
+      padding-left: 123px;
+
+      .home,
+      .destination,
+      .crew,
+      .technology {
+        color: #fff;
+        font-family: Barlow Condensed;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 2.7px;
+        margin-right: 48px;
+        width: fit-content;
+        height: fit-content;
+        position: relative;
+      }
+
+      .technology {
+        margin-right: 0;
+      }
+      .active::before {
+        content: '';
+        width: 70px;
+        height: 3px;
+        flex-shrink: 0;
+        background: #fff;
+        position: absolute;
+        bottom: 0;
+        // left: -1rem;
+        transform: translate(15%, 2.4rem);
+      }
+
+      &::before {
+        content: '';
+        width: 473px;
+        height: 1px;
+        flex-shrink: 0;
+        opacity: 0.2515;
+        background: #fff;
+        position: absolute;
+        left: -25rem;
+      }
+    }
+  }
+}
