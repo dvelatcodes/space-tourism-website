@@ -1,7 +1,7 @@
 header {
   width: 100vw;
   height: 96px;
-  position: absolute;
+  padding-left: 2rem;
   display: flex;
   align-items: center;
   nav {
@@ -34,8 +34,40 @@ header {
         width: fit-content;
         height: fit-content;
         position: relative;
-      }
 
+        span {
+          color: #fff;
+          font-family: Barlow Condensed;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+          letter-spacing: 2.7px;
+        }
+      }
+      .home:hover::before,
+      .destination:hover::before,
+      .crew:hover::before,
+      .technology:hover::before {
+        content: '';
+        width: 98px;
+        height: 3px;
+        background: #fff;
+        position: absolute;
+        bottom: 0;
+        transform: translate(12%, 2.4rem);
+        flex-shrink: 0;
+        opacity: 0.5021;
+      }
+      .destination:hover::before {
+        transform: translate(30%, 2.4rem);
+      }
+      .crew:hover::before {
+        transform: translate(0%, 2.4rem);
+      }
+      .technology:hover::before {
+        transform: translate(30%, 2.4rem);
+      }
       .technology {
         margin-right: 0;
       }
@@ -47,7 +79,6 @@ header {
         background: #fff;
         position: absolute;
         bottom: 0;
-        // left: -1rem;
         transform: translate(15%, 2.4rem);
       }
 

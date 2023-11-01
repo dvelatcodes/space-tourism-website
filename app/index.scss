@@ -8,4 +8,96 @@
   background-image: url('../assets/home/background-home-desktop.jpg');
   background-repeat: no-repeat;
   background-size: cover;
+  padding-top: 2rem;
+
+  @media screen and (max-width: 1366px) {
+    overflow: hidden;
+  }
+
+  main {
+    width: 100%;
+    height: fit-content;
+    margin-top: 140px;
+    padding-left: 165px;
+    display: flex;
+
+    @media screen and (min-height: 900px) {
+      margin-top: 251px;
+    }
+
+    .homeContent {
+      margin-right: 391px;
+      h5 {
+        color: #d0d6f9;
+        font-family: Barlow Condensed;
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 4.725px;
+      }
+      h1 {
+        color: #fff;
+        font-family: Bellefair;
+        font-size: 150px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+      p {
+        width: 444px;
+        color: #d0d6f9;
+        font-family: Barlow;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 32px;
+      }
+    }
+
+    .explore {
+      width: 274px;
+      height: 274px;
+      flex-shrink: 0;
+      border-radius: 274px;
+      position: relative;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      h4 {
+        color: #0b0d17;
+        font-family: Bellefair;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 2px;
+      }
+
+      &:hover::before {
+        content: '';
+        width: 320px;
+        height: 320px;
+        flex-shrink: 0;
+        border-radius: 320px;
+        opacity: 0.1036;
+        background: #fff;
+        position: absolute;
+      }
+
+      @media screen and (min-width: 1440px) {
+        &:hover::before {
+          content: '';
+          width: 450px;
+          height: 450px;
+          flex-shrink: 0;
+          border-radius: 450px;
+          opacity: 0.1036;
+          background: #fff;
+          position: absolute;
+        }
+      }
+    }
+  }
 }
