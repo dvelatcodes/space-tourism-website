@@ -86,7 +86,9 @@
         flex-shrink: 0;
         display: flex;
         justify-content: space-between;
-        margin-bottom: 1rem;
+        @media screen and (min-height: 630px) {
+          margin-bottom: 1rem;
+        }
 
         .single-circle {
           width: 15px;
@@ -117,12 +119,45 @@
       }
     }
 
-    img {
+    .first {
+      width: 568.072px;
       height: 447px;
 
       @media screen and (min-height: 630px) {
         height: 712px;
       }
+    }
+    .second {
+      width: 453.44px;
+      height: 447px;
+
+      @media screen and (min-height: 630px) {
+        height: 654px;
+      }
+    }
+    .third {
+      width: 554.388px;
+      height: 447px;
+
+      @media screen and (min-height: 630px) {
+        height: 681px;
+      }
+    }
+    .fourth {
+      width: 568.072px;
+      height: 447px;
+
+      @media screen and (min-height: 630px) {
+        width: 615.567px;
+        height: 607px;
+      }
+    }
+    .lowMB {
+      width: 568.072px;
+      height: 447px;
+      border-radius: 25px;
+      background: rgba(255, 255, 255, 0.04);
+      backdrop-filter: blur(40.774227142333984px);
     }
   }
 }

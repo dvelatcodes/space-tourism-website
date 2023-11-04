@@ -61,13 +61,27 @@ const Crew = () => {
             ))}
           </div>
         </div>
-        {data !== null && data.length > 0 && (
+        {data !== null && data.length ? (
           <Image
             src={data[picked].images.png}
             alt='crew-image'
             width={568.072}
             height={712}
+            quality={100}
+            className={`${
+              picked === 0
+                ? 'first'
+                : picked === 1
+                ? 'second'
+                : picked === 2
+                ? 'third'
+                : picked === 3
+                ? 'fourth'
+                : ''
+            }`}
           />
+        ) : (
+          <div className='lowMB'></div>
         )}
       </main>
     </div>
