@@ -8,7 +8,6 @@ const Navbar = () => {
   const [active, setActive] = useState('');
 
   useEffect(() => {
-    console.log('hello');
     setActive(window.location.pathname);
   }, []);
 
