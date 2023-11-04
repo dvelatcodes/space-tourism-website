@@ -1,5 +1,6 @@
 'use client';
 import { useState, useEffect } from 'react';
+import Image from 'next/image';
 import './index.scss';
 
 // components
@@ -51,14 +52,23 @@ const Crew = () => {
           <div className='circles'>
             {crewSize.map((crew, index) => (
               <div
-                className='single-circle'
+                className={`single-circle ${
+                  index == picked ? 'butActive' : 'single-circle'
+                }`}
                 key={index}
                 onClick={() => showCrew(index)}
               ></div>
             ))}
           </div>
         </div>
-        {/* <Image src={} alt=''/> */}
+        {data !== null && data.length > 0 && (
+          <Image
+            src={data[picked].images.png}
+            alt='crew-image'
+            width={568.072}
+            height={712}
+          />
+        )}
       </main>
     </div>
   );

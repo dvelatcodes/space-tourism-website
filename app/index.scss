@@ -2,16 +2,21 @@
   max-width: 1440px;
   width: 100vw;
   max-height: 900px;
-  height: 100vh;
+  height: fit-content;
   flex-shrink: 0;
   background-color: #0b0d17;
   background-image: url('../assets/home/background-home-desktop.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 2rem;
+  padding-bottom: 1.56rem;
 
   @media screen and (max-width: 1366px) {
     overflow: hidden;
+  }
+  @media screen and (min-height: 630px) {
+    height: 900px;
+    padding-bottom: 0;
   }
 
   main {
@@ -21,7 +26,7 @@
     padding-left: 165px;
     display: flex;
 
-    @media screen and (min-height: 900px) {
+    @media screen and (min-height: 630px) {
       margin-top: 251px;
     }
 
