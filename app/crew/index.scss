@@ -8,6 +8,9 @@
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 2rem;
+  @media screen and (max-height: 630px) {
+    overflow: hidden;
+  }
 
   main {
     width: 100%;
@@ -122,7 +125,6 @@
     .first {
       width: 568.072px;
       height: 447px;
-      transition: width 100ms ease-in-out;
 
       @media screen and (min-height: 630px) {
         height: 712px;
@@ -131,7 +133,6 @@
     .second {
       width: 453.44px;
       height: 447px;
-      transition: width 100ms ease-in-out;
 
       @media screen and (min-height: 630px) {
         height: 654px;
@@ -140,7 +141,6 @@
     .third {
       width: 554.388px;
       height: 447px;
-      transition: width 100ms ease-in-out;
 
       @media screen and (min-height: 630px) {
         height: 681px;
@@ -149,7 +149,6 @@
     .fourth {
       width: 568.072px;
       height: 447px;
-      transition: width 100ms ease-in-out;
 
       @media screen and (min-height: 630px) {
         width: 615.567px;
