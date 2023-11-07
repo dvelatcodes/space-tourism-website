@@ -18,7 +18,6 @@ const Technology = () => {
     })
       .then((data) => data.json())
       .then((data) => {
-        console.log(data.technology, 'data here');
         setData(data.technology);
       });
   };
