@@ -52,7 +52,7 @@ const Technology = () => {
               );
             })}
           </div>
-          {data !== null && (
+          {data !== null && data.length > 0 && (
             <div className='tech-content'>
               <div className='content'>
                 <h6>THE TERMINOLOGY…</h6>
