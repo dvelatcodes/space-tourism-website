@@ -17,7 +17,10 @@ const Technology = () => {
       },
     })
       .then((data) => data.json())
-      .then((data) => setData(data.technology));
+      .then((data) => {
+        console.log(data.technology, 'data here');
+        setData(data.technology);
+      });
   };
   // trigger picked function
   const trigger = (index) => {
