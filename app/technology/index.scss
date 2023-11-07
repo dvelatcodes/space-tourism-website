@@ -1,0 +1,179 @@
+.techContainer {
+  max-width: 1440px;
+  width: 100vw;
+  max-height: 900px;
+  height: auto;
+  flex-shrink: 0;
+  background-color: #0b0d17;
+  background-repeat: no-repeat;
+  background-image: url('/assets/technology/background-technology-desktop.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 2rem;
+  padding-bottom: 1.56rem;
+
+  @media screen and (max-width: 1366px) {
+    overflow-x: hidden;
+  }
+  @media screen and (min-width: 1367px) {
+    overflow: hidden;
+    width: 1440px;
+  }
+
+  @media screen and (min-height: 630px) {
+    height: 900px;
+    padding-bottom: 0;
+  }
+
+  .tech-main {
+    width: fit-content;
+    height: fit-content;
+    padding-left: 165px;
+    margin-top: 30px;
+
+    @media screen and (min-height: 630px) {
+      margin-top: 76px;
+    }
+
+    h5 {
+      color: #fff;
+      font-family: Barlow Condensed;
+      font-size: 28px;
+      font-weight: 400;
+      letter-spacing: 4.725px;
+
+      span {
+        color: #fff;
+        font-family: Barlow Condensed;
+        font-size: 28px;
+        font-weight: 700;
+        letter-spacing: 4.725px;
+        opacity: 0.25;
+        margin-right: 24px;
+      }
+    }
+
+    .tech-sections {
+      width: fit-content;
+      height: fit-content;
+      display: flex;
+
+      .tech-circles {
+        width: fit-content;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        margin-right: 80px;
+        margin-top: 50px;
+        @media screen and (min-height: 630px) {
+          margin-top: 137px;
+        }
+
+        .circle {
+          width: 80px;
+          height: 80px;
+          border: 1px solid #fff;
+          border-radius: 50%;
+          flex-shrink: 0;
+          opacity: 0.25;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          cursor: pointer;
+
+          span {
+            color: #fff;
+            text-align: center;
+            font-family: Bellefair;
+            font-size: 32px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            letter-spacing: 2px;
+          }
+
+          &:hover {
+            opacity: 1;
+          }
+        }
+        // selected circle
+        .activeCircle {
+          width: 80px;
+          height: 80px;
+          background-color: #fff;
+          border-radius: 50%;
+          flex-shrink: 0;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          cursor: pointer;
+
+          span {
+            color: #0b0d17;
+            text-align: center;
+            font-family: Bellefair;
+            font-size: 32px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            letter-spacing: 2px;
+          }
+        }
+
+        div:nth-child(1),
+        div:nth-child(2) {
+          margin-bottom: 32px;
+        }
+      }
+
+      .tech-content {
+        width: fit-content;
+        height: fit-content;
+        display: flex;
+
+        .content {
+          margin: 50px 160.37px 0 0;
+
+          @media screen and (min-height: 630px) {
+            margin-top: 137px;
+          }
+
+          h6 {
+            color: #d0d6f9;
+            font-family: Barlow Condensed;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            letter-spacing: 2.7px;
+            margin-bottom: 11px;
+          }
+          h1 {
+            color: #fff;
+            font-family: Bellefair;
+            font-size: 56px;
+            font-style: normal;
+            font-weight: 400;
+            margin-bottom: 17px;
+          }
+          p {
+            width: 444px;
+            color: #d0d6f9;
+            font-family: Barlow;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 32px;
+          }
+        }
+
+        .tImg {
+          height: 400px;
+          @media screen and (min-height: 630px) {
+            height: 527px;
+          }
+        }
+      }
+    }
+  }
+}

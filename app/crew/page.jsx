@@ -2,25 +2,14 @@
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import './index.scss';
-// import { useAnimation, motion } from 'framer-motion';
-// import { useInView } from 'react-intersection-observer';
 
 // components
 import Navbar from '../component/navbar/Navbar';
-
-// framer motion variants
-// const squareVariants = {
-//   visible: { opacity: 1, scale: 1, transition: { duration: 1 } },
-//   hidden: { opacity: 0, scale: 0 },
-// };
 
 const Crew = () => {
   const crewSize = [0, 1, 2, 3];
   const [data, setData] = useState(null);
   const [picked, setPicked] = useState(0);
-
-  // const controls = useAnimation();
-  // const [ref, inView] = useInView();
 
   // fetch function to retrieve json data from public directory
   const getData = () => {
@@ -41,13 +30,6 @@ const Crew = () => {
   useEffect(() => {
     getData();
   }, []);
-
-  // useEffect for useInView
-  // useEffect(() => {
-  //   if (inView) {
-  //     controls.start('visible');
-  //   }
-  // }, [controls, inView]);
 
   // select function for crew
   const showCrew = (index) => {
@@ -80,12 +62,6 @@ const Crew = () => {
           </div>
         </div>
         {data !== null && data.length ? (
-          // <motion.span
-          //   ref={ref}
-          //   animate={controls}
-          //   initial='hidden'
-          //   variants={squareVariants}
-          // >
           <Image
             src={data[picked].images.png}
             alt='crew-image'
@@ -105,7 +81,6 @@ const Crew = () => {
             }`}
           />
         ) : (
-          // </motion.span>
           <div className='lowMB'></div>
         )}
       </main>

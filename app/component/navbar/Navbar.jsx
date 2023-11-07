@@ -31,7 +31,9 @@ const Navbar = () => {
           </Link>
           <Link
             href='/destination'
-            className={`destination`}
+            className={`destination ${
+              '/destination' === active ? 'active' : ''
+            }`}
           >
             <span>01</span> DESTINATION
           </Link>
@@ -43,7 +45,7 @@ const Navbar = () => {
           </Link>
           <Link
             href='/technology'
-            className={`technology`}
+            className={`technology ${'/technology' === active ? 'active' : ''}`}
           >
             <span>03</span> TECHNOLOGY
           </Link>
