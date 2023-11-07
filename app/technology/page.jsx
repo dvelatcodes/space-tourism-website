@@ -28,9 +28,7 @@ const Technology = () => {
   };
   // call tech data
   useEffect(() => {
-    return () => {
-      getData();
-    };
+    getData();
   }, []);
 
   return (
