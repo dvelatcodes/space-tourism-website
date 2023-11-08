@@ -30,18 +30,33 @@ header {
       .ham {
         width: 24px;
         height: 5px;
-        // background-color: #d0d6f9;
         border-bottom: 2px solid #d0d6f9;
         background-color: none;
+      }
+
+      .crossHam1,
+      .crossHam3 {
+        width: 24px;
+        height: 5px;
+        border-bottom: 2px solid #d0d6f9;
+        position: absolute;
+      }
+      .crossHam1 {
+        transform: rotate(45deg);
+        transition: transform 400ms ease-in-out;
+      }
+      .crossHam3 {
+        transform: rotate(-45deg);
+        transition: transform 400ms ease-in-out;
       }
     }
   }
   @media screen and (max-width: 375px) {
     .show {
       position: absolute;
-      position: absolute;
       transform: translateX(35%);
       transition: transform 500ms ease-in-out;
+      z-index: 5;
     }
   }
   nav {

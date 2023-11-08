@@ -26,12 +26,14 @@ const Navbar = () => {
         className='hamburger'
         onClick={() => {
           setPress(!press);
-          console.log(press);
         }}
       >
-        <div className='ham'></div>
-        <div className='ham'></div>
-        <div className='ham'></div>
+        <div className={`${press === true ? 'crossHam1' : 'ham'}`}></div>
+        <div
+          className={`${press === true ? 'crossHam' : 'ham'}`}
+          style={{ display: press === true ? 'none' : 'block' }}
+        ></div>
+        <div className={`${press === true ? 'crossHam3' : 'ham'}`}></div>
       </section>
       <nav className={`${press === true ? 'show' : ''}`}>
         <div>

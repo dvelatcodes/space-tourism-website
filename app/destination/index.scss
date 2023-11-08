@@ -20,11 +20,23 @@
     overflow-x: hidden;
   }
 
+  @media screen and (max-width: 768px) {
+    width: 768px;
+    height: 1024px;
+    padding-top: 0;
+    background-image: url('/assets/destination/background-destination-tablet.jpg');
+  }
+
   main {
     width: fit-content;
     height: fit-content;
     padding-left: 165px;
     margin-top: 30px;
+    @media screen and (max-width: 768px) {
+      margin-top: 50px;
+      width: 100%;
+      padding-left: 0;
+    }
 
     h5 {
       color: #fff;
@@ -35,7 +47,11 @@
       line-height: normal;
       letter-spacing: 4.725px;
       text-transform: uppercase;
-
+      @media screen and (max-width: 768px) {
+        font-size: 20px;
+        letter-spacing: 3.375px;
+        margin-left: 38.5px;
+      }
       span {
         color: #fff;
         font-family: Barlow Condensed;
@@ -46,6 +62,11 @@
         letter-spacing: 4.725px;
         opacity: 0.25;
         margin-right: 28px;
+        @media screen and (max-width: 768px) {
+          margin-right: 19px;
+          font-size: 20px;
+          letter-spacing: 3.375px;
+        }
       }
     }
 
@@ -58,6 +79,16 @@
 
       @media screen and (min-height: 630px) {
         margin-top: 70px;
+      }
+      @media screen and (max-width: 768px) {
+        width: fit-content;
+        padding-left: 0;
+        margin-top: 0;
+        position: absolute;
+        right: 0;
+        bottom: -8rem;
+        left: 0;
+        margin: auto;
       }
 
       .sections {
@@ -116,10 +147,17 @@
       width: fit-content;
       height: fit-content;
       display: flex;
-      margin-top: 10px;
+      margin-top: 20px;
 
       @media screen and (min-height: 630px) {
         margin-top: 37px;
+      }
+
+      @media screen and (max-width: 768px) {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 40px;
       }
 
       .Img {
@@ -131,10 +169,17 @@
           width: 500px;
           margin-right: 106.5px;
         }
+
+        @media screen and (max-width: 768px) {
+          margin-right: 0;
+        }
       }
       .write-up {
         width: fit-content;
         height: fit-content;
+        @media screen and (max-width: 768px) {
+          margin-top: 7rem;
+        }
 
         h1 {
           color: #fff;
@@ -143,6 +188,10 @@
           font-style: normal;
           font-weight: 400;
           line-height: normal;
+          @media screen and (max-width: 768px) {
+            font-size: 80px;
+            text-align: center;
+          }
         }
 
         p {
@@ -157,6 +206,12 @@
           @media screen and (min-height: 630px) {
             margin-bottom: 54px;
           }
+          @media screen and (max-width: 768px) {
+            font-size: 16px;
+            line-height: 28px;
+            text-align: center;
+            margin-bottom: 25px;
+          }
         }
 
         .location {
@@ -168,6 +223,10 @@
           @media screen and (min-height: 630px) {
             padding-top: 28px;
           }
+          @media screen and (max-width: 768px) {
+            padding-top: 28px;
+            margin: auto;
+          }
 
           &::before {
             content: '';
@@ -176,6 +235,10 @@
             background: #383b4b;
             position: absolute;
             top: 0;
+            @media screen and (max-width: 768px) {
+              width: 573px;
+              transform: translateX(-20%);
+            }
           }
 
           .distance h6,
@@ -189,6 +252,9 @@
             letter-spacing: 2.362px;
             text-transform: uppercase;
             margin-bottom: 12px;
+            @media screen and (max-width: 768px) {
+              text-align: center;
+            }
           }
 
           .distance h4,
@@ -200,6 +266,9 @@
             font-weight: 400;
             line-height: normal;
             text-transform: uppercase;
+            @media screen and (max-width: 768px) {
+              text-align: center;
+            }
           }
 
           div:nth-child(1) {
