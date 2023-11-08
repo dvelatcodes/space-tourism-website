@@ -4,9 +4,61 @@ header {
   padding-left: 2rem;
   display: flex;
   align-items: center;
+
+  @media screen and (max-width: 375px) {
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+  }
+
+  .logo {
+    @media screen and (max-width: 375px) {
+      margin-top: 24px;
+    }
+  }
+  .hamburger {
+    display: none;
+
+    @media screen and (max-width: 375px) {
+      display: block;
+      width: 24px;
+      height: 21px;
+      position: absolute;
+      margin: 33.9px 0 0 280px;
+      z-index: 10;
+
+      .ham {
+        width: 24px;
+        height: 5px;
+        // background-color: #d0d6f9;
+        border-bottom: 2px solid #d0d6f9;
+        background-color: none;
+      }
+    }
+  }
+  @media screen and (max-width: 375px) {
+    .show {
+      position: absolute;
+      position: absolute;
+      transform: translateX(35%);
+      transition: transform 500ms ease-in-out;
+    }
+  }
   nav {
     width: 830px;
     height: 96px;
+
+    @media screen and (max-width: 768px) {
+      width: 450px;
+    }
+
+    @media screen and (max-width: 375px) {
+      position: absolute;
+      width: 254px;
+      position: absolute;
+      transform: translateX(135%);
+      transition: transform 500ms ease-in-out;
+    }
 
     div {
       width: inherit;
@@ -18,6 +70,23 @@ header {
       background: rgba(255, 255, 255, 0.04);
       backdrop-filter: blur(40.774227142333984px);
       padding-left: 123px;
+      @media screen and (max-width: 768px) {
+        margin-left: 231px;
+        padding-left: 0;
+        justify-content: space-around;
+        position: relative;
+      }
+
+      @media screen and (max-width: 375px) {
+        flex-direction: column;
+        padding-top: 118px;
+        padding-left: 32px;
+        width: 254px;
+        height: 667px;
+        justify-content: unset;
+        align-items: unset;
+        margin-left: 0;
+      }
 
       .home,
       .destination,
@@ -34,6 +103,16 @@ header {
         width: fit-content;
         height: fit-content;
         position: relative;
+        @media screen and (max-width: 768px) {
+          margin-right: 0;
+          font-size: 14px;
+          letter-spacing: 2.362px;
+        }
+        @media screen and (max-width: 375px) {
+          font-size: 16px;
+          letter-spacing: 2.7px;
+          margin-bottom: 32px;
+        }
 
         span {
           color: #fff;
@@ -43,6 +122,13 @@ header {
           font-weight: 700;
           line-height: normal;
           letter-spacing: 2.7px;
+          margin-right: 12px;
+          @media screen and (max-width: 768px) {
+            display: none;
+          }
+          @media screen and (max-width: 375px) {
+            display: inline;
+          }
         }
       }
       .home:hover::before,
@@ -58,15 +144,27 @@ header {
         transform: translate(12%, 2.4rem);
         flex-shrink: 0;
         opacity: 0.5021;
+        @media screen and (max-width: 768px) {
+          display: none;
+        }
       }
       .destination:hover::before {
         transform: translate(30%, 2.4rem);
+        @media screen and (max-width: 768px) {
+          display: none;
+        }
       }
       .crew:hover::before {
         transform: translate(0%, 2.4rem);
+        @media screen and (max-width: 768px) {
+          display: none;
+        }
       }
       .technology:hover::before {
         transform: translate(30%, 2.4rem);
+        @media screen and (max-width: 768px) {
+          display: none;
+        }
       }
       .technology {
         margin-right: 0;
@@ -80,6 +178,13 @@ header {
         position: absolute;
         bottom: 0;
         transform: translate(15%, 2.4rem);
+        @media screen and (max-width: 768px) {
+          width: 36px;
+          height: 3px;
+        }
+        @media screen and (max-width: 375px) {
+          display: none;
+        }
       }
 
       &::before {
@@ -91,7 +196,21 @@ header {
         background: #fff;
         position: absolute;
         left: -25rem;
+        @media screen and (max-width: 768px) {
+          display: none;
+        }
       }
     }
   }
+
+  // @media screen and (max-width: 375px) {
+  //   .show {
+  //     position: absolute;
+  //     // width: 254px;
+  //     position: absolute;
+  //     // transform: translateX(130%);
+  //     transform: translateX(35%);
+  //     // margin: auto;
+  //   }
+  // }
 }

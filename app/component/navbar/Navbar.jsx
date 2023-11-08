@@ -6,6 +6,7 @@ import { useEffect, useState } from 'react';
 
 const Navbar = () => {
   const [active, setActive] = useState('');
+  const [press, setPress] = useState(false);
 
   useEffect(() => {
     setActive(window.location.pathname);
@@ -21,7 +22,18 @@ const Navbar = () => {
         quality={100}
         className='logo'
       />
-      <nav>
+      <section
+        className='hamburger'
+        onClick={() => {
+          setPress(!press);
+          console.log(press);
+        }}
+      >
+        <div className='ham'></div>
+        <div className='ham'></div>
+        <div className='ham'></div>
+      </section>
+      <nav className={`${press === true ? 'show' : ''}`}>
         <div>
           <Link
             href='/'
