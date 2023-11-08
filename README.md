@@ -1,4 +1,48 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Frontend Mentor - Space tourism website solution
+
+This is a solution to the [Space tourism website challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/space-tourism-multipage-website-gRWj1URZ3). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+
+### The challenge
+
+Users should be able to:
+
+- View the optimal layout for each of the website's pages depending on their device's screen size
+- See hover states for all interactive elements on the page
+- View each page and be able to toggle between the tabs to see new information
+- View each sections on a page
+
+### Screenshots
+
+![web view of home-page](public/home.JPG)
+![web view of crew-page](public/crew-web-view.JPG)
+![web view of technology page](public/tech-web-view.JPG)
+![web view of destination page](public/web-view-destination-page.JPG)
+
+## Deployed on Vercel
+
+The application is hosted on vercel, check it out here [Vercel Platform](https://space-tourism-website-peach.vercel.app/) .
+
+## My process
+
+### Built with
+
+- Semantic HTML5 markup
+- CSS custom properties
+- Flexbox
+- Media Queries
+- [React](https://reactjs.org/) - JS library
+- [Next.js](https://nextjs.org/) - React framework
+- [Styled Components](https://styled-components.com/) - For styles
+
+### What I learned
+
+- Every file or asset stored in your public dir can be easily accessed throughout your application using the forward slash and the name of the file
+
+## Author
+
+- Website - [My portfolio](https://dvelat-portfolio.vercel.app/)
+- Frontend Mentor - [@dvelatcodes](https://www.frontendmentor.io/profile/dvelatcodes)
+- Linkedin - [@Love (Dvelat codes) Olubummo](https://www.linkedin.com/in/love-olubummo-dvelat/)
 
 ## Getting Started
 
@@ -28,9 +72,3 @@ To learn more about Next.js, take a look at the following resources:
 - [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
