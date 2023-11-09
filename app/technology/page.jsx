@@ -8,6 +8,7 @@ const Technology = () => {
   const circles = [1, 2, 3];
   const [picked, setPicked] = useState(0);
   const [data, setData] = useState(null);
+  const [currentWidth, setCurrentWidth] = useState(800);
   // get tech data
   const getData = () => {
     fetch('/data.json', {
@@ -30,6 +31,10 @@ const Technology = () => {
     getData();
   }, []);
 
+  useEffect(() => {
+    setCurrentWidth(window.innerWidth);
+  }, [currentWidth]);
+
   return (
     <div className='techContainer'>
       <Navbar />
@@ -39,28 +44,38 @@ const Technology = () => {
           SPACE LAUNCH 101
         </h5>
         <div className='tech-sections'>
-          <div className='tech-circles'>
-            {circles.map((circle, index) => {
-              return (
-                <div
-                  key={index}
-                  className={`${picked === index ? 'activeCircle' : 'circle'}`}
-                  onClick={() => trigger(index)}
-                >
-                  {<span>{circle}</span>}
-                </div>
-              );
-            })}
-          </div>
-          {data !== null && data.length > 0 && (
-            <div className='tech-content'>
+          <div className='left'>
+            <div className='tech-circles'>
+              {circles.map((circle, index) => {
+                return (
+                  <div
+                    key={index}
+                    className={`${
+                      picked === index ? 'activeCircle' : 'circle'
+                    }`}
+                    onClick={() => trigger(index)}
+                  >
+                    {<span>{circle}</span>}
+                  </div>
+                );
+              })}
+            </div>
+            {data !== null && data.length > 0 && (
               <div className='content'>
                 <h6>THE TERMINOLOGY…</h6>
                 <h1>{data[picked].name}</h1>
                 <p>{data[picked].description}</p>
               </div>
+            )}
+          </div>
+          {data !== null && data.length > 0 && (
+            <div className='tech-content'>
               <Image
-                src={data[picked].images.portrait}
+                src={
+                  currentWidth <= 768
+                    ? data[picked].images.landscape
+                    : data[picked].images.portrait
+                }
                 alt='tech-image'
                 width={515.311}
                 height={527}

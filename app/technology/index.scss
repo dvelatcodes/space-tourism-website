@@ -25,6 +25,18 @@
     padding-bottom: 0;
   }
 
+  @media screen and (max-width: 768px) {
+    width: 768px;
+    height: 1024px;
+    background-image: url('/assets/technology/background-technology-tablet.jpg');
+  }
+
+  @media screen and (max-width: 375px) {
+    width: 375px;
+    height: 710px;
+    background-image: url('/assets/technology/background-technology-mobile.jpg');
+  }
+
   .tech-main {
     width: fit-content;
     height: fit-content;
@@ -34,6 +46,11 @@
     @media screen and (min-height: 630px) {
       margin-top: 76px;
     }
+    @media screen and (max-width: 768px) {
+      padding-left: 0;
+      padding-top: 27px;
+      margin: auto;
+    }
 
     h5 {
       color: #fff;
@@ -41,7 +58,18 @@
       font-size: 28px;
       font-weight: 400;
       letter-spacing: 4.725px;
+      @media screen and (max-width: 768px) {
+        font-size: 20px;
+        letter-spacing: 3.375px;
+        margin: 0 0 20px 38.5px;
+      }
 
+      @media screen and (max-width: 375px) {
+        text-align: center;
+        font-size: 16px;
+        letter-spacing: 2.7px;
+        margin: 0 0 0 0;
+      }
       span {
         color: #fff;
         font-family: Barlow Condensed;
@@ -50,6 +78,16 @@
         letter-spacing: 4.725px;
         opacity: 0.25;
         margin-right: 24px;
+        @media screen and (max-width: 768px) {
+          font-size: 20px;
+          letter-spacing: 3.375px;
+          margin-right: 16px;
+        }
+        @media screen and (max-width: 375px) {
+          text-align: center;
+          font-size: 16px;
+          letter-spacing: 2.7px;
+        }
       }
     }
 
@@ -58,84 +96,138 @@
       height: fit-content;
       display: flex;
 
-      .tech-circles {
-        width: fit-content;
-        height: fit-content;
-        display: flex;
-        flex-direction: column;
-        margin-right: 80px;
-        margin-top: 50px;
-        @media screen and (min-height: 630px) {
-          margin-top: 137px;
-        }
-
-        .circle {
-          width: 80px;
-          height: 80px;
-          border: 1px solid #fff;
-          border-radius: 50%;
-          flex-shrink: 0;
-          opacity: 0.25;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          cursor: pointer;
-
-          span {
-            color: #fff;
-            text-align: center;
-            font-family: Bellefair;
-            font-size: 32px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: normal;
-            letter-spacing: 2px;
-          }
-
-          &:hover {
-            opacity: 1;
-          }
-        }
-        // selected circle
-        .activeCircle {
-          width: 80px;
-          height: 80px;
-          background-color: #fff;
-          border-radius: 50%;
-          flex-shrink: 0;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          cursor: pointer;
-
-          span {
-            color: #0b0d17;
-            text-align: center;
-            font-family: Bellefair;
-            font-size: 32px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: normal;
-            letter-spacing: 2px;
-          }
-        }
-
-        div:nth-child(1),
-        div:nth-child(2) {
-          margin-bottom: 32px;
-        }
+      @media screen and (max-width: 768px) {
+        flex-direction: column-reverse;
+        align-items: center;
       }
 
-      .tech-content {
+      .left {
         width: fit-content;
         height: fit-content;
         display: flex;
+        @media screen and (max-width: 768px) {
+          flex-direction: column;
+          padding-top: 40px;
+        }
+        .tech-circles {
+          width: fit-content;
+          height: fit-content;
+          display: flex;
+          flex-direction: column;
+          margin-right: 80px;
+          margin-top: 50px;
+          @media screen and (min-height: 630px) {
+            margin-top: 137px;
+          }
+          @media screen and (max-width: 768px) {
+            flex-direction: row;
+            margin: 30px 0 0 0;
+            margin: auto;
+          }
+          .circle {
+            width: 80px;
+            height: 80px;
+            border: 1px solid #fff;
+            border-radius: 50%;
+            flex-shrink: 0;
+            opacity: 0.25;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+
+            @media screen and (max-width: 768px) {
+              width: 60px;
+              height: 60px;
+            }
+            @media screen and (max-width: 375px) {
+              width: 40px;
+              height: 40px;
+            }
+
+            span {
+              color: #fff;
+              text-align: center;
+              font-family: Bellefair;
+              font-size: 32px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: normal;
+              letter-spacing: 2px;
+              @media screen and (max-width: 768px) {
+                font-size: 24px;
+              }
+              @media screen and (max-width: 375px) {
+                font-size: 16px;
+              }
+            }
+
+            &:hover {
+              opacity: 1;
+              @media screen and (max-width: 768px) {
+                display: none;
+              }
+            }
+          }
+          // selected circle
+          .activeCircle {
+            width: 80px;
+            height: 80px;
+            background-color: #fff;
+            border-radius: 50%;
+            flex-shrink: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            @media screen and (max-width: 768px) {
+              width: 60px;
+              height: 60px;
+            }
+            @media screen and (max-width: 375px) {
+              width: 40px;
+              height: 40px;
+            }
+
+            span {
+              color: #0b0d17;
+              text-align: center;
+              font-family: Bellefair;
+              font-size: 32px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: normal;
+              letter-spacing: 2px;
+              @media screen and (max-width: 768px) {
+                font-size: 24px;
+              }
+              @media screen and (max-width: 375px) {
+                font-size: 16px;
+              }
+            }
+          }
+
+          div:nth-child(1),
+          div:nth-child(2) {
+            margin-bottom: 32px;
+            @media screen and (max-width: 768px) {
+              margin: 0 16px 0 0;
+            }
+          }
+        }
 
         .content {
           margin: 50px 160.37px 0 0;
 
           @media screen and (min-height: 630px) {
             margin-top: 137px;
+          }
+
+          @media screen and (max-width: 768px) {
+            margin: 44px 0 0 0;
+          }
+          @media screen and (max-width: 375px) {
+            margin-top: 26px;
           }
 
           h6 {
@@ -147,6 +239,15 @@
             line-height: normal;
             letter-spacing: 2.7px;
             margin-bottom: 11px;
+            @media screen and (max-width: 768px) {
+              text-align: center;
+              margin-bottom: 16px;
+            }
+            @media screen and (max-width: 375px) {
+              margin-bottom: 9px;
+              font-size: 14px;
+              letter-spacing: 2.362px;
+            }
           }
           h1 {
             color: #fff;
@@ -155,6 +256,15 @@
             font-style: normal;
             font-weight: 400;
             margin-bottom: 17px;
+            @media screen and (max-width: 768px) {
+              text-align: center;
+              margin-bottom: 16px;
+              font-size: 40px;
+            }
+            @media screen and (max-width: 375px) {
+              margin-bottom: 9px;
+              font-size: 24px;
+            }
           }
           p {
             width: 444px;
@@ -164,13 +274,38 @@
             font-style: normal;
             font-weight: 400;
             line-height: 32px;
+            @media screen and (max-width: 768px) {
+              text-align: center;
+              width: 458px;
+              font-size: 16px;
+              line-height: 28px;
+            }
+            @media screen and (max-width: 375px) {
+              width: 327px;
+              font-size: 15px;
+              line-height: 25px;
+            }
           }
         }
+      }
+
+      .tech-content {
+        width: fit-content;
+        height: fit-content;
+        // display: flex;
 
         .tImg {
           height: 400px;
           @media screen and (min-height: 630px) {
             height: 527px;
+          }
+          @media screen and (max-width: 768px) {
+            width: 767px;
+            height: 350px;
+          }
+          @media screen and (max-width: 375px) {
+            width: 373px;
+            height: 245px;
           }
         }
       }
