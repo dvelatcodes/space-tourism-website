@@ -8,8 +8,17 @@
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 2rem;
+  overflow: hidden;
+
   @media screen and (max-height: 630px) {
     overflow: hidden;
+  }
+  @media screen and (max-width: 768px) {
+    width: 768px;
+    height: 1024px;
+    background-image: url('/assets/crew/background-crew-tablet.jpg');
+    padding-top: 0;
+    overflow: scroll;
   }
 
   main {
@@ -17,15 +26,27 @@
     height: fit-content;
     display: flex;
     padding-left: 165.23px;
-    margin-top: 50px;
+    margin-top: 44px;
     @media screen and (min-height: 630px) {
       margin-top: 62px;
+    }
+    @media screen and (max-width: 768px) {
+      margin-top: 0;
+      padding-left: 0;
+      padding-top: 2rem;
+      flex-direction: column;
+      align-items: center;
+      margin: auto;
     }
 
     .crew-content {
       width: fit-content;
       height: fit-content;
       margin-right: 81.43px;
+
+      @media screen and (max-width: 768px) {
+        margin-right: 0;
+      }
 
       h3,
       h4,
@@ -45,11 +66,20 @@
         @media screen and (min-height: 630px) {
           margin-bottom: 154px;
         }
+        @media screen and (max-width: 768px) {
+          font-size: 20px;
+          letter-spacing: 3.375px;
+          margin-bottom: 40px;
+        }
 
         span {
           font-weight: 700;
           opacity: 0.25;
           margin-right: 24px;
+          @media screen and (max-width: 768px) {
+            font-size: 20px;
+            letter-spacing: 3.375px;
+          }
         }
       }
 
@@ -59,6 +89,12 @@
         font-weight: 400;
         opacity: 0.5;
         margin-bottom: 15px;
+        margin-right: 24px;
+        @media screen and (max-width: 768px) {
+          font-size: 24px;
+          margin: 0 0 8px 0;
+          text-align: center;
+        }
       }
 
       h3 {
@@ -66,6 +102,12 @@
         font-size: 56px;
         font-weight: 400;
         margin-bottom: 27px;
+        margin-right: 24px;
+        @media screen and (max-width: 768px) {
+          font-size: 40px;
+          margin: 0 0 16px 0;
+          text-align: center;
+        }
       }
 
       p {
@@ -81,6 +123,13 @@
         @media screen and (min-height: 630px) {
           margin-bottom: 120px;
         }
+        @media screen and (max-width: 768px) {
+          font-size: 16px;
+          line-height: 28px;
+          width: 592px;
+          margin-bottom: 40px;
+          text-align: center;
+        }
       }
 
       .circles {
@@ -92,6 +141,11 @@
         @media screen and (min-height: 630px) {
           margin-bottom: 1rem;
         }
+        @media screen and (max-width: 768px) {
+          width: 88px;
+          height: 10px;
+          margin: auto;
+        }
 
         .single-circle {
           width: 15px;
@@ -100,6 +154,11 @@
           border-radius: 15px;
           background: #fff;
           opacity: 0.1744;
+          @media screen and (max-width: 768px) {
+            width: 10px;
+            height: 10px;
+            border-radius: 10px;
+          }
 
           &:hover {
             cursor: pointer;
@@ -114,6 +173,11 @@
           border-radius: 15px;
           background: #fff;
           opacity: 0.500094;
+          @media screen and (max-width: 768px) {
+            width: 10px;
+            height: 10px;
+            border-radius: 10px;
+          }
 
           &:hover {
             opacity: 0.500094;
@@ -129,6 +193,11 @@
       @media screen and (min-height: 630px) {
         height: 712px;
       }
+      @media screen and (max-width: 768px) {
+        width: 456.372px;
+        height: 532px;
+        margin-top: 40px;
+      }
     }
     .second {
       width: 453.44px;
@@ -136,6 +205,11 @@
 
       @media screen and (min-height: 630px) {
         height: 654px;
+      }
+      @media screen and (max-width: 768px) {
+        width: 368.853px;
+        height: 532px;
+        margin-top: 40px;
       }
     }
     .third {
@@ -145,6 +219,11 @@
       @media screen and (min-height: 630px) {
         height: 681px;
       }
+      @media screen and (max-width: 768px) {
+        width: 433.09px;
+        height: 532px;
+        margin-top: 40px;
+      }
     }
     .fourth {
       width: 568.072px;
@@ -153,6 +232,11 @@
       @media screen and (min-height: 630px) {
         width: 615.567px;
         height: 607px;
+      }
+      @media screen and (max-width: 768px) {
+        width: 539.5px;
+        height: 532px;
+        margin-top: 40px;
       }
     }
 

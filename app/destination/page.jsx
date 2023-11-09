@@ -39,7 +39,7 @@ const Destination = () => {
           <span>01</span>
           Pick your destination
         </h5>
-        <div className='static-content'>
+        {/* <div className='static-content'>
           <div className='sections'>
             {sections.map((section, index) => {
               return (
@@ -53,7 +53,7 @@ const Destination = () => {
               );
             })}
           </div>
-        </div>
+        </div> */}
         {data !== null && data.length > 0 && (
           <div className='dynamic-content'>
             <Image
@@ -64,6 +64,23 @@ const Destination = () => {
               className='Img'
             />
             <div className='write-up'>
+              <div className='static-content'>
+                <div className='sections'>
+                  {sections.map((section, index) => {
+                    return (
+                      <div
+                        key={index}
+                        className={`${
+                          index === picked ? 'activeOption' : 'option'
+                        }`}
+                        onClick={() => interchange(index)}
+                      >
+                        {section}
+                      </div>
+                    );
+                  })}
+                </div>
+              </div>
               <h1>{data[picked].name}</h1>
               <p>{data[picked].description}</p>
               <div className='location'>
