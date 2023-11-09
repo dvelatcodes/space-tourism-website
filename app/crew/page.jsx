@@ -39,16 +39,17 @@ const Crew = () => {
   return (
     <div className='crewContainer'>
       <Navbar />
-
+      <h5>
+        <span>02</span>
+        Meet your crew
+      </h5>
       <main>
         <div className='crew-content'>
-          <h5>
-            <span>02</span>
-            Meet your crew
-          </h5>
-          {data !== null && data.length > 0 && <h4>{data[picked].role}</h4>}
-          {data !== null && data.length > 0 && <h3>{data[picked].name}</h3>}
-          {data !== null && data.length > 0 && <p>{data[picked].bio}</p>}
+          <div className='content'>
+            {data !== null && data.length > 0 && <h4>{data[picked].role}</h4>}
+            {data !== null && data.length > 0 && <h3>{data[picked].name}</h3>}
+            {data !== null && data.length > 0 && <p>{data[picked].bio}</p>}
+          </div>
           <div className='circles'>
             {crewSize.map((crew, index) => (
               <div
