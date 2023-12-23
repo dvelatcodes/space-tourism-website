@@ -1,9 +1,11 @@
 header {
+  max-width: 1440px;
   width: 100vw;
   height: 96px;
   padding-left: 2rem;
   display: flex;
   align-items: center;
+  margin: auto;
 
   @media screen and (max-width: 375px) {
     position: relative;
@@ -79,12 +81,17 @@ header {
       width: inherit;
       height: inherit;
       position: absolute;
-      right: 0;
+      right: 22%;
+      // left: 0;
+      // margin: auto;
       display: flex;
       align-items: center;
       background: rgba(255, 255, 255, 0.04);
       backdrop-filter: blur(40.774227142333984px);
-      padding-left: 123px;
+      padding-left: 23px;
+      @media screen and (max-width: 1440px) {
+        right: 0;
+      }
       @media screen and (max-width: 768px) {
         margin-left: 231px;
         padding-left: 0;
@@ -150,7 +157,7 @@ header {
       .destination:hover::before,
       .crew:hover::before,
       .technology:hover::before {
-        content: '';
+        content: "";
         width: 98px;
         height: 3px;
         background: #fff;
@@ -185,7 +192,7 @@ header {
         margin-right: 0;
       }
       .active::before {
-        content: '';
+        content: "";
         width: 70px;
         height: 3px;
         flex-shrink: 0;
@@ -203,7 +210,7 @@ header {
       }
 
       &::before {
-        content: '';
+        content: "";
         width: 473px;
         height: 1px;
         flex-shrink: 0;

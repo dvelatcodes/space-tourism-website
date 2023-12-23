@@ -5,11 +5,12 @@
   height: fit-content;
   flex-shrink: 0;
   background-color: #0b0d17;
-  background-image: url('/assets/home/background-home-desktop.jpg');
+  background-image: url("/assets/home/background-home-desktop.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 2rem;
   padding-bottom: 1.2rem;
+  margin: auto;
 
   @media screen and (max-width: 1366px) {
     overflow: hidden;
@@ -21,7 +22,7 @@
   @media screen and (max-width: 768px) {
     width: 768px;
     height: 1024px;
-    background-image: url('/assets/home/background-home-tablet.jpg');
+    background-image: url("/assets/home/background-home-tablet.jpg");
     padding-top: 0;
     overflow: scroll;
     padding-bottom: 0;
@@ -30,7 +31,7 @@
   @media screen and (max-width: 375px) {
     width: 375px;
     height: 667px;
-    background-image: url('/assets/home/background-home-mobile.jpg');
+    background-image: url("/assets/home/background-home-mobile.jpg");
     padding-top: 0;
     overflow: hidden;
   }
@@ -160,7 +161,7 @@
       }
 
       &:hover::before {
-        content: '';
+        content: "";
         width: 320px;
         height: 320px;
         flex-shrink: 0;
@@ -175,7 +176,7 @@
 
       @media screen and (min-width: 1440px) {
         &:hover::before {
-          content: '';
+          content: "";
           width: 450px;
           height: 450px;
           flex-shrink: 0;
