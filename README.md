@@ -9,7 +9,7 @@ Users should be able to:
 - View the optimal layout for each of the website's pages depending on their device's screen size
 - See hover states for all interactive elements on the page
 - View each page and be able to toggle between the tabs to see new information
-- View each sections on a page
+- View each section on a page
 
 ### Screenshots
 
@@ -20,7 +20,7 @@ Users should be able to:
 
 ## Deployed on Vercel
 
-The application is hosted on vercel, check it out here [Vercel Platform](https://space-tourism-website-peach.vercel.app/) .
+The application is hosted on Vercel, check it out here [Space-tourism-website](https://space-tourism-website-peach.vercel.app/)
 
 ## My process
 
